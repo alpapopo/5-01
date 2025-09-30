@@ -27,9 +27,10 @@ class Triangle(private val p1: Point, private val p2: Point, private val p3: Poi
         val area1 = area(p, p2, p3)
         val area2 = area(p1, p, p3)
         val area3 = area(p1, p2, p)
-        // Прямое сравнение без ограничения точности
+        
         return totalArea == (area1 + area2 + area3)
     }
 
 
 }
+
